@@ -1,0 +1,20 @@
+<nav id="nav">
+    <div class="container flex">
+        <div>
+            <img src="/images/logo.png" /><span id="logo">TOURISTA</span>
+        </div>
+        <div class="links">
+            <a href="/">Home</a>
+            <!-- <a>Tourist Guides</a>
+            <a>Place to visit</a>
+            <a>Hotels</a>
+            <a>Restaurants</a> -->
+            <a href="business">Business</a>
+            <% if(!currentUser) {%>
+            <a href="register">Login/Sign Up</a>
+            <% } else {%>
+                <a href="logout">Logout</a>
+                <% } %>
+        </div>
+</nav> 
+
